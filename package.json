@@ -1,20 +1,26 @@
 {
+  "homepage": "http://Ramong06.github.io/rick-and-morty-apollo",
   "name": "rick-and-morty-apollo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "graphql": "^16.2.0",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "eslint": "8.6.0",
-    "eslint-config-next": "12.0.7"
+    "eslint-config-next": "12.0.7",
+    "gh-pages": "^3.2.3"
   }
 }
